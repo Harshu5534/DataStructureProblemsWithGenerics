@@ -9,7 +9,7 @@ namespace DataStructureProblems
         {
             Console.WriteLine("-----------Welcome to Linked List Program----------");
             bool end = true;
-            Console.WriteLine("\n1.Add Data\n2.Reverse Data\n3.InsertData\n4.RemoveFirstElement\n5.RemoveLastElement\n6.Search Node\n7.InsertNewData\n8.StackPush\n9.StackPickPop\n10.End Of Program ");
+            Console.WriteLine("\n1.Add Data\n2.Reverse Data\n3.InsertData\n4.RemoveFirstElement\n5.RemoveLastElement\n6.Search Node\n7.InsertNewData\n8.StackPush\n9.StackPickPop\n10.BalancedParentheses\n11.End Of Program ");
             while (end)
             {
                 DataStructure<string> structure=new DataStructure <string>();
@@ -80,6 +80,11 @@ namespace DataStructureProblems
                         break;
                         break;
                     case 10:
+                        StackBalancedParentheses parentheses = new StackBalancedParentheses();
+                        parentheses.BalancedParentheses();
+                        break;
+
+                    case 11:
                         end = false;
                         Console.WriteLine("Program Is Ended.");
                         break;
