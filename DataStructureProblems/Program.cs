@@ -80,8 +80,8 @@ namespace DataStructureProblems
                         break;
                         break;
                     case 10:
-                        StackBalancedParentheses parentheses = new StackBalancedParentheses();
-                        parentheses.BalancedParentheses();
+                        StackBalancedParentheses<int> parentheses = new StackBalancedParentheses<int>();
+                        parentheses.BalancedParentheses<int>();
                         break;
 
                     case 11:

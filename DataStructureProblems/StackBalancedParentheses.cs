@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace DataStructureProblems
 {
-    public class StackBalancedParentheses
+    public class StackBalancedParentheses<T>
     {
        
-        public void BalancedParentheses()
+        public void BalancedParentheses<T>()
         {
-            int top = -1;//String is empty
+            int top = -1;
             int[] str = new int[17]{ '(', '5', '+', '6', ')', '*', '(', '7', '+', '8', ')', '/', '(', '4', '+', '3', ')' };
             int n = str.Length;
             char[] stack = new char[17];
@@ -19,7 +19,7 @@ namespace DataStructureProblems
             {
                 if(str[i] == '(')
                 {
-                    top = top + 1;
+                    top = top + 1; 
                     stack[top] = '(';
                 }
                 if(str[i]==')' && stack[top] == '(')
